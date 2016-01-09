@@ -734,15 +734,15 @@
 		Cette fonction permet donc effectivement de déterminer les moments d'ordre $k$ en dérivant et en évaluant en $t = 0$. \\
 		Ce résultat peut se montrer par le développement en série de l'exponentielle :
 
-		\[\exp(v) = \sum_{i=0}^\infty\frac {v^k}{k!}.\]
+		\[\exp(v) = \sum_{k=0}^\infty\frac {v^k}{k!}.\]
 
 		Dès lors, en réinjectant cela dans la définition de $\Psi_X$, on obtient :
 
-		\[\Psi_X(t) = E\left[\sum_{i=0}^\infty\frac {(tX)^k}{k!}\right] = \sum_{i=0}^\infty\frac {t^k}{k!}E(X^k).\]
+		\[\Psi_X(t) = E\left[\sum_{k=0}^\infty\frac {(tX)^k}{k!}\right] = \sum_{k=0}^\infty\frac {t^k}{k!}E(X^k).\]
 
 		Donc en dérivant $k$ fois, les $k$ premiers termes s'annulent (par dérivation du $t$). On a donc :
 
-		\[\frac {\partial^k}{\partial t^k}\Psi_X(t) = \sum_{i=k}^\infty E(X^k)\frac {t^{i-k}}{(i-k)!}.\]
+		\[\frac {\partial^k}{\partial t^k}\Psi_X(t) = \sum_{i=k}^\infty E(X^i)\frac {t^{i-k}}{(i-k)!}.\]
 
 		Dès lors, en évaluant la $k$ème dérivée en $t = 0$, tous les termes sauf le premier s'annulent afin qu'il ne reste que le moment d'ordre $k$ :
 
