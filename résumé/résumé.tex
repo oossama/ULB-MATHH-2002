@@ -42,7 +42,7 @@
 		Il est important de commencer par déterminer les notations et les notions qui vont suivre afin de ne pas les confondre :
 
 		\begin{itemize}
-			\item une variables aléatoire est notée par une lettre \textbf{latine majuscule} : $X$ ;
+			\item une variable aléatoire est notée par une lettre \textbf{latine majuscule} : $X$ ;
 			\item les valeurs possibles pour une telle variable aléatoire (discrète) sont notées par la même lettre latine mais \textbf{minuscule} avec un indice tel que
 				  $\forall i \in \{1, \ldots, p\} : x_i \leq x_{i+1}$ ;
 			\item l'\textit{effectif} est le nombre d'observations réalisées et est habituellement noté $n$ ;
@@ -143,7 +143,7 @@
 		Attention cependant à ne pas trouver une relation linaire là où il n'y en a pas.
 
 		\subsubsection{Bornes de la covariance}
-			Il existe une propriété disant que $|m_{11} \leq s_1s_2|$. De manière plus précise, si $|m_{11}| = s_1s_2$, c'est que tous les points se situent sur un axe non
+			Il existe une propriété disant que $\abs {m_{11}} \leq s_1s_2$. De manière plus précise, si $\abs {m_{11}} = s_1s_2$, c'est que tous les points se situent sur un axe non
 			parallèle aux axes $Ox$ et $Oy$.
 
 			\underline{Démonstration :}
@@ -236,7 +236,7 @@
 
 			Il est également possible de faire une régression linéaire pour trouver $x$ en fonction de $y$. Dans ce cas, l'équation de droite devient :
 
-			\[D : x = \frac {m_{11}}{s_1^2}(y-\overline y) + \overline x.\]
+			\[D : x = \frac {m_{11}}{s_2^2}(y-\overline y) + \overline x.\]
 
 			La \textit{variance résiduelle} de $y$ en $x$ est donnée par :
 
