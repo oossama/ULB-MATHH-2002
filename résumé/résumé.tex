@@ -1240,9 +1240,9 @@
 
 		\[P\left( \abs{\frac Fn-p} \geq \epsilon \right) = P\left( \abs{V-\mu_V} \geq \epsilon\right).\]
 
-		Or $D^2(V) = D^2\left(\frac Fn\right) = \frac 1{n^2}D^2(F) = \frac 1{n^2}np(1-) = \frac {p(1-p)}n$. Posons $k \coloneqq \frac \epsilon{\sqrt {p(1-p)}n}$. Dès lors :
+		Or $D^2(V) = D^2\left(\frac Fn\right) = \frac 1{n^2}D^2(F) = \frac 1{n^2}np(1-p) = \frac {p(1-p)}n$. Posons $k \coloneqq \frac \epsilon{\sqrt {\frac {p(1-p)}n}}$. Dès lors :
 
-		\[\lim_{n\to+\infty}P\left(\abs{\frac Fn - p} \geq \epsilon\right) = \lim_{n\to+\infty}P\left(\abs{V-\mu_V} \geq k\sigma_V\right) \leq \lim_{n\to+\infty}\frac 1{\frac {\epsilon^2}{\sqrt{\frac {p(1-p)}n}^2}} = \frac {p(1-p)}{n\epsilon^2}\lim_{n\to+\infty}\frac 1n = 0.\]
+		\[\lim_{n\to+\infty}P\left(\abs{\frac Fn - p} \geq \epsilon\right) = \lim_{n\to+\infty}P\left(\abs{V-\mu_V} \geq k\sigma_V\right) \leq \lim_{n\to+\infty}\frac 1{\frac {\epsilon^2}{\sqrt{\frac {p(1-p)}n}^2}} = \frac {p(1-p)}{\epsilon^2}\lim_{n\to+\infty}\frac 1n = 0.\]
 	
 \section{Inférence statistique}
 	\textbf{La population} est l'ensemble des objets étudiés et n'est pas observable (soit pas en entier, soit pas directement). \textbf{Un échantillon} est un sous-ensemble (aléatoire et simple)
