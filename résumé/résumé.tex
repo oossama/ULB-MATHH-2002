@@ -1139,7 +1139,7 @@
 	
 		On sait également que :
 
-		\[\sigma^2 = D^2(V) = D\left(\sum_{i=1}^nV_i\right) = \sum_{i=1}^nD^2(V_i) = \sum_{i=1}^n\bar\sigma = n\bar\sigma.\]
+		\[\sigma^2 = D^2(V) = D^2\left(\sum_{i=1}^nV_i\right) = \sum_{i=1}^nD^2(V_i) = \sum_{i=1}^n\bar\sigma^2 = n\bar\sigma^2.\]
 
 		Or en reprenant l'égalité précédente, on a :
 
@@ -1151,7 +1151,7 @@
 
 		En exprimant $\Psi_{W_j}(t)$ sous la forme suivante :
 
-		\[\Psi_{W_j}(t) = E[\exp(tW_j)] = E\left[\sum_{k=0}^{+\infty}\frac {(tW_j)^k}{k!}\right] = \sum_{k=0}^{+\infty}E(W_j^k) = 1 + E(W_j)t + E\left(\frac {W_j^2}2\right)t^2 + R(t^3),\]
+		\[\Psi_{W_j}(t) = E[\exp(tW_j)] = E\left[\sum_{k=0}^{+\infty}\frac {(tW_j)^k}{k!}\right] = \sum_{k=0}^{+\infty}E\left(\frac {W_j^k}{k!}\right)t^k = 1 + E(W_j)t + E\left(\frac {W_j^2}2\right)t^2 + R(t^3),\]
 
 		où $R(t^3)$ est un reste en $O(t^3)$ et $E(W_j) = 0$, on peut déterminer $D^2(W_j) = E(W_j^2) - E(W_j)^2 = E(W_j^2)$ et $D^2(W_j) = D^2(V_j - \bar\mu) = D^2(V_j) = \bar{\sigma}^2$.
 		Dès lors, on a :
@@ -1206,7 +1206,7 @@
 		\begin{align*}
 			\sigma_X^2 &= D^2(X) = \int_{-\infty}^{+\infty}(x-\mu_X)^2f_X(x)\dif x \\
 			           &= \int_{-\infty}^{\mu_X-k\sigma_X} (x-\mu_X)^2f_X(fx)\dif x + \int_{\mu_X - k\sigma_X}^{\mu_X + k\sigma_X}(x-\mu_X)^2f_X(x)\dif x + \int_{\mu_X + k\sigma_X}^{+\infty}(x-\mu_X)^2f_X(x)\dif x \\
-					   &\geq \int_{-\infty}^{\mu_X-k\sigma_X}(x-\mu_X)f_X(fx)\dif x + \int_{\mu_X + k\sigma_X}^{+\infty}(x-\mu_X)^2f_X(x)\dif x.
+					   &\geq \int_{-\infty}^{\mu_X-k\sigma_X}(x-\mu_X)^2f_X(fx)\dif x + \int_{\mu_X + k\sigma_X}^{+\infty}(x-\mu_X)^2f_X(x)\dif x.
 		\end{align*}
 
 		Soient $P_1 = ]-\infty, \mu_X-k\sigma_X], P_2 = [\mu_X+k\sigma_X, +\infty[$. On a :
