@@ -1122,7 +1122,7 @@
 		\[\frac {V - \mu_V}{\sigma_V} \stackrel{n \to +\infty}{\longrightarrow} \Nzo.\]
 
 		\underline{Démonstration :} Soient $V_1, \ldots, V_n$ des variables aléatoires iid\footnote{Indépendantes et Identiquement Distribuées.}. Soient $V = \sum_{i=1}^nV_i$,
-		$Z = \frac {V - E(X)}{D(X)}$. Supposons que $\forall i : E(V_i) = \bar \mu, D(V_i) = \bar \sigma$. On sait que :
+		$Z = \frac {V - E(V)}{D(V)}$. Supposons que $\forall i : E(V_i) = \bar \mu, D(V_i) = \bar \sigma$. On sait que :
 
 		\[\Psi_Z(t) = E\left[\exp\left(t\frac {V-E(V)}{D(V)}\right)\right].\]
 
@@ -1130,7 +1130,7 @@
 	
 		\[E(V) = E\left(\sum_{i=1}^nV_i\right) = \sum_{i=1}^nE(V_i) = \sum_{i=1}^n\bar \mu = n\bar \mu.\]
 
-		Posons $W_i \coloneqq V_i  \bar \mu$. Dès lors, on sait que $E(W_i) = \bar \mu - \bar \mu = 0$. Donc :
+		Posons $W_i \coloneqq V_i - \bar \mu$. Dès lors, on sait que $E(W_i) = \bar \mu - \bar \mu = 0$. Donc :
 
 		\begin{align*}
 			\Psi_Z(t) &= E\left[ \exp\left(\frac t\sigma(V-E(V))\right) \right] = E\left[ \exp\left(\frac t\sigma \left(\sum_{i=1}^nV_i - \sum_{i=1}^n\bar\mu\right)\right) \right] \\
